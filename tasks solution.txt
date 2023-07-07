@@ -1,0 +1,121 @@
+task 1
+var string= prompt(" Enter the string");
+var char=  prompt(" Enter the character you want to search ");
+ var arrchar =[];
+
+for( var i=0; i<string.length;i++){
+    if(string[i]==char){
+       arrchar.push(i+1);
+    }
+}
+document.writeln( " the character ' "+ char +" ' is found in [ " + arrchar +" ] ");
+
+############
+task 2
+
+ do{
+    var flag=0;
+    var num= prompt(" Enter the number");
+    if (isNaN(num) ){
+    alert("Enter only Number"); 
+    flag++;
+}
+}while(flag!=0);
+
+if((Number(num))%3==0){
+    var text ="fizz";
+    flag=1;
+    
+}
+if((Number(num))%5==0){
+    var text2 ="buzz";
+    flag=2;
+}
+if((Number(num))%3==0 &&(Number(num))%5==0){
+ 
+    flag=3;
+}
+switch(flag){
+case 1:
+    document.writeln(" ' "+text+" ' " );
+break;
+case 2: 
+    document.writeln(" ' "+text2+" ' " );
+break;
+case 3:
+        document.writeln(" ' "+text+" "+ text2+" '");
+break;
+default:
+    document.writeln(" It is not divisible by 3 or 5");
+break;
+
+}
+###########3
+task 3
+
+
+
+var arrStr=[" ahmed ", " ali " ," mona " ," alaa " ," mohamed " ," manar "
+," mahmoud "," shrouk" ," salma ", " semoon "];
+document.writeln(arrStr);
+do{
+var num1= Math.floor(Math.random()*10);
+var num2= Math.floor(Math.random()*10);
+
+}while(num1==num2);
+document.writeln("<br> <br> [ ' "+ arrStr[num1] +"' ," +arrStr[num2]+" ' ]");
+
+
+#############3
+
+task 4
+
+
+var begin =confirm("who am i game ");
+if(begin){
+var num =confirm("DO you fly ?");
+if(num){
+    var num2 = confirm("are you wild ?");
+    if(num2){
+        document.writeln("you are a Eagle <br>")
+        document.writeln("<img src='./1.jpg'>")
+    }
+    else{
+        document.writeln("you are a parrot <br>")
+        document.writeln("<img src='./2.jpg'>")
+    }
+
+}
+else{
+    var num3 = confirm("Do You Live Undersea ?");
+    if(num3){
+        var num2 = confirm("Are you wild ?");
+        if(num2){
+            document.writeln("you are a shark <br>")
+            document.writeln("<img src='./3.jpg'>")
+        }
+        else{
+            document.writeln("you are a Dolphan <br>")
+            document.writeln("<img src='./4.jpg'>")
+
+        }
+    }
+    else{
+        var num4 = confirm("Are you wild ?");
+        if(num4){
+            document.writeln("you are a lion <br>")
+            document.writeln("<img src='./5.jpg'>")
+        }
+        else{
+            document.writeln("you are a cat <br><br>")
+            document.writeln("<img src='./6.jpg'>")
+
+        }
+    }    
+}
+
+}
+else{
+document.writeln("End");
+}
+
